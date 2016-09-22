@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    BeetSoft<br />
+    302 Nguyễn Trãi, Trung Văn, Nam Từ Liêm, Hà Nội, Việt Nam<br />
+    <abbr title="Phone">P:</abbr>
+    01668453483
+</address>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:300px;width:477px;'><div id='gmap_canvas' style='height:300px;width:478px;'></div><div><small><a href="http://www.embedgooglemaps.com/en/">Generate your map here, quick and easy!									Give your customers directions									Get found</a></small></div><div><small><a href="https://top10geeks.com/top-10-best-dslr-cameras-beginners-2016/">Best DSLR cameras of 2016</a></small></div>
+<style>
+    #gmap_canvas img {
+        max-width: none !important;
+        background: none !important;
+    }
+</style></div>
+<script type='text/javascript'>function init_map() { var myOptions = { zoom: 17, center: new google.maps.LatLng(20.9902107, 105.80128089999994), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(20.9902107, 105.80128089999994) }); infowindow = new google.maps.InfoWindow({ content: '<strong>BeetSoft Company</strong><br>302 Nguyễn Trãi, Trung Văn, Nam từ liêm, Hà Nội<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
